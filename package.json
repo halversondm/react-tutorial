@@ -26,6 +26,10 @@
     "jscs": "jscs ."
   },
   "dependencies": {
+    "body-parser": "^1.14.1",
+    "jQuery": "^1.7.4",
+    "jquery": "^2.1.4",
+    "marked": "^0.3.5",
     "react": "0.14.0-rc1 ",
     "react-dom": "0.14.0-rc1"
   },

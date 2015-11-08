@@ -1,0 +1,34 @@
+[
+    {
+        "author": "Pete Hunt",
+        "text": "Hey there!"
+    },
+    {
+        "author": "Paul O’Shannessy",
+        "text": "React is *great*!"
+    },
+    {
+        "author": "dan",
+        "text": "test"
+    },
+    {
+        "author": "ryan halverson",
+        "text": "blah!!!!"
+    },
+    {
+        "author": "dan halverson",
+        "text": "blah2!!!!"
+    },
+    {
+        "author": "Megan",
+        "text": "test"
+    },
+    {
+        "author": "einstein",
+        "text": "woof"
+    },
+    {
+        "author": "courtney",
+        "text": "hello!"
+    }
+]
