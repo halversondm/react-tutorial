@@ -7,5 +7,8 @@ describe('comment', function () {
     it('renders without problems', function () {
         var comment = TestUtils.renderIntoDocument(<Comment author="Dan">test comment</Comment>);
         expect(comment).toExist();
+
+        var h2 = TestUtils.findRenderedDOMComponentWithTag(comment, 'h2');
+        expect(h2.textContent).toEqual('Dan');
     });
 });

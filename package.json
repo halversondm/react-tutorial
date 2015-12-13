@@ -1,27 +1,26 @@
 {
-  "name": "webpack-express-boilerplate",
+  "name": "react-tutorial-webpack-es6",
   "version": "0.1.0",
-  "description": "A boilerplate for running a Webpack workflow in Node express",
+  "description": "Recreated the React tutorial using Webpack and ES6 classes",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate.git"
+    "url": "https://github.com/halversondm/react-tutorial.git"
   },
   "keywords": [
     "express",
     "webpack",
     "node"
   ],
-  "author": "Christian Alfoni",
+  "author": "Dan Halverson",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate/issues"
-  },
-  "homepage": "https://github.com/christianalfoni/webpack-express-boilerplate",
   "scripts": {
-    "test": "set NODE_ENV=production && karma start",
+    "test": "karma start -w",
+    "prestart": "npm run clean",
     "start": "babel-node server",
-    "build": "rimraf dist && set NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean && npm run test -- --singleRun",
+    "build": "webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint .",
     "jscs": "jscs ."
   },
